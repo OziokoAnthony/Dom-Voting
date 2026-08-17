@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo"><h2>Hackathon Africa 3.0 E-portal</h2></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#vote">Vote</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#winner-section">Winner</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <h1>Head of House E-portal</h1>
+
+        <div class="vote-box" id="vote">
+            <h2>Cast Your Vote</h2>
+
+            <label for="voter">Select Voter</label>
+            <select id="voter">
+                <option value="">Select your name</option>
+                <option>Anthony</option><option>Augustine</option><option>James</option>
+                <option>Charlse</option><option>David</option><option>Christopher</option>
+                <option>Ifeanyi</option><option>Rita</option><option>Loveth</option>
+                <option>Chidinma</option><option>Victor</option><option>Amara</option>
+                <option>Majesty</option><option>Gabriel</option><option>Peter</option>
+                <option>Abigail</option><option>Kosisochukwu</option><option>Lilian</option>
+                <option>Bonaventure</option><option>Stephine</option>
+            </select>
+
+            <label for="contestant">Vote For</label>
+            <select id="contestant">
+                <option value="">Select contestant</option>
+                <option>Anthony</option><option>Augustine</option><option>James</option>
+                <option>Charlse</option><option>David</option><option>Christopher</option>
+                <option>Ifeanyi</option><option>Rita</option><option>Loveth</option>
+                <option>Chidinma</option><option>Victor</option><option>Amara</option>
+                <option>Majesty</option><option>Gabriel</option><option>Peter</option>
+                <option>Abigail</option><option>Kosisochukwu</option><option>Lilian</option>
+                <option>Bonaventure</option><option>Stephine</option>
+            </select>
+
+            <button id="voteBtn">Vote</button>
+            <p id="message"></p>
+        </div>
+
+        <div class="boxes">
+            <div><p>Total Voters</p><h3 id="total">20</h3></div>
+            <div><p>Votes Cast</p><h3 id="cast">0</h3></div>
+            <div><p>Votes Left</p><h3 id="left">20</h3></div>
+        </div>
+
+        <div class="winner" id="winner-section">
+            <p>Winner</p>
+            <h2 id="winner">No votes yet</h2>
+            <span id="winnerVotes">0 votes</span>
+        </div>
+
+        <div class="results" id="statistics">
+            <h2>Statistics</h2>
+            <div id="result"></div>
+        </div>
+
+        <button id="resetBtn" class="reset">Reset Votes</button>
+    </div>
+
+    <script type="module" src="dist/script.js"></script>
+</body>
+</html>

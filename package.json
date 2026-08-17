@@ -1,0 +1,11 @@
+{
+  "name": "voting-system",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
